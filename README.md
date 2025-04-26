@@ -1,97 +1,96 @@
+
 # Project Setup Guide
 
-This guide provides step-by-step instructions to set up your project environment, including setting up a Python virtual environment using Pipenv, pip, or conda.
+This guide provides step-by-step instructions to set up your project environment, including how to configure a Python virtual environment using Pipenv, pip, or Conda.
 
 ## Table of Contents
 
-1. [Setting Up a Python Virtual Environment](#setting-up-a-python-virtual-environment)
-   - [Using Pipenv](#using-pipenv)
-   - [Using pip and venv](#using-pip-and-venv)
-   - [Using Conda](#using-conda)
-2. [Running the application](#project-phases-and-python-commands)
-
+1. [Setting Up a Python Virtual Environment](#setting-up-a-python-virtual-environment)  
+   - [Using Pipenv](#using-pipenv)  
+   - [Using pip and venv](#using-pip-and-venv)  
+   - [Using Conda](#using-conda)  
+2. [Running the Application](#running-the-application)
 
 ## Setting Up a Python Virtual Environment
 
 ### Using Pipenv
-1. **Install Pipenv (if not already installed):**  
-```
-pip install pipenv
-```
+1. **Install Pipenv (if not already installed):**
+   ```
+   pip install pipenv
+   ```
 
-2. **Install Dependencies with Pipenv:** 
+2. **Install Project Dependencies:**
+   ```
+   pipenv install
+   ```
 
-```
-pipenv install
-```
-
-3. **Activate the Virtual Environment:** 
-
-```
-pipenv shell
-```
+3. **Activate the Virtual Environment:**
+   ```
+   pipenv shell
+   ```
 
 ---
 
 ### Using `pip` and `venv`
-#### Create a Virtual Environment:
-```
-python -m venv venv
-```
+1. **Create a Virtual Environment:**
+   ```
+   python -m venv venv
+   ```
 
-#### Activate the Virtual Environment:
-**macOS/Linux:**
-```
-source venv/bin/activate
-```
+2. **Activate the Virtual Environment:**  
+   **macOS/Linux:**
+   ```
+   source venv/bin/activate
+   ```  
+   **Windows:**
+   ```
+   venv\Scripts\activate
+   ```
 
-**Windows:**
-```
-venv\Scripts\activate
-```
-
-#### Install Dependencies:
-```
-pip install -r requirements.txt
-```
+3. **Install Project Dependencies:**
+   ```
+   pip install -r requirements.txt
+   ```
 
 ---
 
 ### Using Conda
-#### Create a Conda Environment:
-```
-conda create --name myenv python=3.11
-```
+1. **Create a Conda Environment:**
+   ```
+   conda create --name myenv python=3.11
+   ```
 
-#### Activate the Conda Environment:
-```
-conda activate myenv
-```
+2. **Activate the Conda Environment:**
+   ```
+   conda activate myenv
+   ```
 
-#### Install Dependencies:
-```
-pip install -r requirements.txt
-```
+3. **Install Project Dependencies:**
+   ```
+   pip install -r requirements.txt
+   ```
 
+---
 
-# Project Phases and Python Commands
+# Running the Application
 
-## Phase 1: Create AI Agent
+## Phase 1: Create the AI Agent
 ```
 python ai_agent.py
 ```
 
-## Phase 2: Setup Backend with FastAPI
+## Phase 2: Set Up the Backend with FastAPI
 ```
 python backend.py
 ```
 
-## Phase 3: Setup Frontend with Streamlit
+## Phase 3: Launch the Frontend with Streamlit
 ```
 python frontend.py
 ```
 
-## IMPORTANT
-### Make sure backend python script is running in a separate terminal
+---
 
+# Important Note
+Make sure the backend script (`backend.py`) is running in a separate terminal window before starting the frontend.
 
