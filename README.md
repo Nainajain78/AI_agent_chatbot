@@ -76,7 +76,7 @@ This guide provides step-by-step instructions to set up your project environment
 
 ## Phase 1: Create the AI Agent
 ```
-python ai_agent.py
+python AI_agent.py
 ```
 
 ## Phase 2: Set Up the Backend with FastAPI
